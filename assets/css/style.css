@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+:root{
+    --bs-blue: #2a9fd6;
+    --bs-gray: #555555;
+    ---transition: all 0.4s ease-in-out;
+  }
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: #060606;;
+}
+
+  h1,h2,h3,h4,h5,h6{
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    text-decoration: underline;
+    color: var(--bs-blue);
+  }
+  
+  img{
+    width: 100%;
+    display: block;
+  }
+/*  ============================== end Global rules  ============================== */
+
+/*  ============================== strat components  ============================== */
+/* button */
+.btn-main{
+    color: #fff !important;
+    background-color: var(--bs-blue);
+    padding: 10px 20px;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+.btn-main:hover{
+    background-color: #2487b6 !important;
+}
+/* bg */
+.bg-2{
+  background-color: #121212;
+}
+/*  border custom */
+.border-custom{
+  border: 1px solid #444;
+  transition: var(---transition);
+}
+.border-custom:hover{
+  border-color: var(--bs-blue);
+}
+/* color paragraph */
+.p2{
+  color: var(--bs-blue);
+  }
+  /*  ============================== end components  ============================== */
+  
+  /* ============================== Navbar ============================== */
+  .navbar{
+    background-color: #060606;
+    border-bottom: 1px solid var(--bs-gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999;
+  }
+  .navbar .navbar-brand{
+    color: var(--bs-blue);
+    text-decoration: underline;
+    font-size: 35px !important;
+    transition: var(---transition);
+  }
+  .navbar .navbar-brand:hover{
+    color: #2487b6 !important;
+  }
+  .navbar .navbar-nav{
+    align-items: center;
+  }
+  .navbar .navbar-nav .nav-link{
+    color: #ffffff8c;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    outline: none;
+    transition: var(---transition);
+  }
+  .navbar .navbar-nav .nav-link:hover{
+    color: #fff;
+  }
+  /* ============================= Hero Section ============================= */
+.hero .active{
+    background-color: #555555 !important;
+    border-color: #555555;
+    transition: var(---transition);
+}
+.hero .active:hover{
+    background-color: #3d3c3c !important;
+}
+/* ============================= service Section ============================= */
+.service .icon{
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    transition: var(---transition);
+}
+.service:hover .icon{
+  background-color: var(--bs-blue);
+}
+/* ============================= Portfolio Section ============================= */
+/* .project img{
+  width: 300px;
+} */
+.Portfolio .project{
+  position: relative;
+  overflow: hidden;
+}
+.Portfolio .project .overlay{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  transform: translateY(60px);
+  padding: 32px;
+  transition: var(---transition); 
+}
+.Portfolio .project:hover .overlay{
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ============================= Testimonials Section ============================= */
+.testimonials .project img{
+  width: 90px;
+  border-radius: 100px;
+}
+/* ============================= Team Section ============================= */
+.team .links{
+  display: flex;
+  justify-content: space-between;
+}
+.team .links .icon{
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 24px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgb(85, 85, 85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(---transition);
+}
+.team .links .icon:hover{
+background-color: var(--bs-blue);
+border: 1px solid var(--bs-blue);
+}
+/* ============================= blog Section ============================= */
+.blog{
+  background-color: #121212;
+}
+.blog .box span{
+  background-color: var(--bs-blue);
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 0 !important;
+}
+/* ============================= contact Section ============================= */
+.contact .icon{
+  width: 60px;
+  height: 60px;
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  transition: var(---transition);
+}
+.contact .form-control{
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 0%;
+  padding: 10px;
+}
+/* ============================= Insta Section ============================= */
+.insta{
+  position: relative;
+}
+.insta .button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.swiper-pagination:hover
+{
+  color: #fff;
+}
+#btn
+{
+  background-color: gray;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius:20px;
+  display: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
